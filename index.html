@@ -25,24 +25,36 @@
       0%, 100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff; }
       50% { text-shadow: 0 0 20px #fffb, 0 0 30px #fffb; }
     }
+	 html {
+    scroll-behavior: smooth;
+  }
     .animate-fadeInUp { animation: fadeInUp 1.5s ease-out forwards; }
     .animate-pulseGlow { animation: pulseGlow 2s infinite; }
   </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  <!-- Hero Section -->
-  <section class="relative flex flex-col items-center justify-center h-screen text-center text-white overflow-hidden">
-    
-    <!-- Floating particles -->
-    <canvas id="particles" class="absolute inset-0 w-full h-full"></canvas>
-    
-    <!-- Content -->
-    <div class="relative z-10 px-6">
-      <h1 class="text-5xl md:text-7xl font-extrabold mb-4 animate-fadeInUp animate-pulseGlow">🚀 Welcome to Mustee Skills!</h1>
-      <p class="text-lg md:text-2xl mb-8 animate-fadeInUp" style="animation-delay: 0.5s;">Explore, Learn, and Build Amazing Projects!</p>
-      <a href="#skills" class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition transform hover:scale-105 animate-fadeInUp" style="animation-delay: 1s;">Explore Skills</a>
-    </div>
-  </section>
+	 
+<!-- Hero Section -->
+<section class="relative flex flex-col items-center justify-center h-screen text-center text-white overflow-hidden">
+  
+  <!-- Floating particles -->
+  <canvas id="particles" class="absolute inset-0 w-full h-full"></canvas>
+  
+  <!-- Content -->
+  <div class="relative z-10 px-6">
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 animate-fadeInUp animate-pulseGlow">
+      🚀 Welcome to Mustee Skills!
+    </h1>
+    <p class="text-lg md:text-2xl mb-8 animate-fadeInUp" style="animation-delay: 0.5s;">
+      Explore, Learn, and Build Amazing Projects!
+    </p>
+    <!-- Fixed button linking to skills section -->
+    <a href="#skills" class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition transform hover:scale-105 animate-fadeInUp" style="animation-delay: 1s">
+      Explore Skills
+    </a>
+  </div>
+</section>
+
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">mustee<span>.</span></a>
